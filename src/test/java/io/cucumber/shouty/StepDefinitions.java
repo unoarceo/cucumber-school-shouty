@@ -1,5 +1,6 @@
 package io.cucumber.shouty;
 
+import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
@@ -12,7 +13,7 @@ public class StepDefinitions {
     Person lucy;
     String messageFromSean;
 
-    @Given("Lucy is located {int} metres from Sean")
+    @Given("Lucy is {int} metre(s) from Sean")
     public void lucy_is_located_metres_from_sean(Integer distance) {
         lucy = new Person();
         sean = new Person();
